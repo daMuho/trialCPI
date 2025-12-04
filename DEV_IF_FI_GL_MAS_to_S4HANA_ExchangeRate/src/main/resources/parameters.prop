@@ -1,0 +1,17 @@
+#Wed Oct 08 10:49:17 UTC 2025
+Data\ Store\ Name\ Success=DEV S4HANA
+end_of_month=end_of_month\=2025-05
+Interface\ Type\ API=API
+KeyID=d502dc29e54d4d81a9e46900df49373c
+Interface\ Name=FI GL MAS to S4HANA Exchange Rate
+S4HANA_Address=http\://ds4httpci\:8000
+Interface\ Type\ Job=JOB
+mas_exchange_address=https\://eip-uat-api.a-star.edu.sg
+S4HANA_Location_ID=CPIQAS
+Exchange_Rate=/DEV_MAS
+Custom_Query_Options=sap-client\=120
+S4\ ERP\ SYSTEM=AStar ERP DEV
+API=API
+Data\ Store\ Name\ Error=DEV S4HANA ERROR
+Interface\ Type=API
+S4HANA_Credential_Name=DEV_S4H_120

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Process">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProcessHeaderType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ExRate">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="ExRateType">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Currency" type="xs:string" />
+                          <xs:element name="FromCurrency" type="xs:string" />
+                          <xs:element name="ToCurrency" type="xs:string" />
+                          <xs:element name="Rate" type="xs:decimal" />
+                          <xs:element name="Factor" type="xs:decimal" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element  name="ReturnMessage">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="ReturnMessageType">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ProcessDateTime" />
+                          <xs:element name="Type" />
+                          <xs:element name="Id" />
+                          <xs:element name="Number" />
+                          <xs:element name="Message" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
